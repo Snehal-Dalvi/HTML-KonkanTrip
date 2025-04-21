@@ -63,7 +63,7 @@
           <li><b>Deluxe Plan:</b> ₹4,499</li>
           <li><b>Premium Plan:</b> ₹6,499</li>
         </ul>
-        <button>View Details</button>
+        <button onClick="openModal('tarkarli')">View Details</button>
       </div>
     </div>
 
@@ -77,7 +77,7 @@
     <li><b>Deluxe Plan:</b> ₹3,699</li>
     <li><b>Premium Plan:</b> ₹5,199</li>
   </ul>
-        <button>View Details</button>
+        <button onClick="openModal('harihareshwar')">View Details</button>
       </div>
     </div>
 
@@ -91,8 +91,8 @@
     <li><b>Deluxe Plan:</b> ₹3,899</li>
     <li><b>Premium Plan:</b> ₹5,499</li>
   </ul>
-        <button>View Details</button>
-      </div>
+
+        <button onClick="openModal('dapoli')">View Details</button>      </div>
     </div>
 
     <div class="card">
@@ -105,8 +105,8 @@
     <li><b>Deluxe Plan:</b> ₹4,199</li>
     <li><b>Premium Plan:</b> ₹5,799</li>
   </ul>
-        <button>View Details</button>
-      </div>
+
+        <button onClick="openModal('amboli')">View Details</button>      </div>
     </div>
 
     <div class="card">
@@ -119,8 +119,8 @@
     <li><b>Deluxe Plan:</b> ₹4,199</li>
     <li><b>Premium Plan:</b> ₹5,699</li>
   </ul>
-        <button>View Details</button>
-      </div>
+
+        <button onClick="openModal('malvan')">View Details</button>      </div>
     </div>
 
     <div class="card">
@@ -133,18 +133,18 @@
           <li><b>Deluxe Plan:</b> ₹3,749</li>
           <li><b>Premium Plan:</b> ₹5,299</li>
         </ul>
-        <button>View Details</button>
-      </div>
+
+        <button onClick="openModal('divegar')">View Details</button>      </div>
     </div>
   </div>
 
 
-<!-- Stylish Modal Popup -->
+<!-- Popup -->
 <div class="modal-overlay" id="modal">
   <div class="modal-box">
     <span class="close-btn" onclick="closeModal()">&times;</span>
     <div id="modal-content">
-      <!-- Destination details will be injected here -->
+      <!-- Destination-->
     </div>
   </div>
 </div>
@@ -165,13 +165,7 @@
   <footer>
     <p>&copy; 2025 Konkan Trips. All rights reserved.</p>
   </footer>
-
-
-
-
-
-
-
+  
 
   <script>
     function openModal(place) {
@@ -194,7 +188,6 @@
             <li>✔️ Homestay & Bonfire Night</li>
           </ul>
         `
-        // Add more destinations here...
       };
   
       document.getElementById('modal-content').innerHTML = content[place] || "<p>Details coming soon.</p>";
